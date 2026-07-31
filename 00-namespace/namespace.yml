@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: inventrack-prod
+  labels:
+    app.kubernetes.io/name: inventrack
+    app.kubernetes.io/part-of: inventrack
+    environment: production
