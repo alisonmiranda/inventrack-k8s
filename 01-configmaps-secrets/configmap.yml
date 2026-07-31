@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: inventrack-config
+  namespace: inventrack-prod
+  labels:
+    app.kubernetes.io/name: inventrack
+    app.kubernetes.io/part-of: inventrack
+    environment: production
+data:
+  NODE_ENV: "production"
+  DB_HOST: "localhost"
+  DB_PORT: "4000"
+  DB_NAME: "inventrack"
+  PORT: "4000"
